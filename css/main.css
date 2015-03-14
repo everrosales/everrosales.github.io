@@ -26,9 +26,17 @@ header nav {
   float: right;
 }
 
+header h1 {
+  font-size: 3em;
+}
+
 nav a {
   color: #FFFFFF;
   text-decoration: none;
+}
+
+nav a:hover {
+  text-shadow: 0px 0px 4px #FFFFFF;
 }
 
 hr {
@@ -109,7 +117,7 @@ nav .header-button {
 
 .project-container {
   height: 380px;
-  max-width: 990px;
+  max-width: 1000px ! important;
   padding: 15px;
 }
 
@@ -138,4 +146,9 @@ nav .header-button {
 .main-content-button:hover {
   color: #FFFFFF;
   background-color: #000000;
+}
+
+.brief {
+  margin: auto;
+  max-width: 700px;
 }
