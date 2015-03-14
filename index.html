@@ -1,101 +1,96 @@
+<!DOCTYPE html>
 <html>
 <head>
-    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-
-    <!-- Optional theme -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-
-    <link rel="icon" href="static/favicon.ico">
-
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-	<script>
-	</script>
-	<title> Everardo Rosales </title>
+  <meta charset="UTF-8">
+  <script src="js/jquery.min.js"></script>
+  <script src="js/particles.min.js"></script>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  <link href="css/main.css" rel='stylesheet' type='text/css'>
+  <link rel="icon" href="static/favicon.ico">
+  <script>
+  $(document).ready(function() {
+    window.alert("Site currently under construction");
+  });
+  </script>
+  <title>Everardo Rosales</title>
 </head>
 <body>
-  	<nav class="navbar navbar-inverse" role="navigation" style="margin-bottom:0;">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">Everardo Rosales</a>
-        </div>
-
-        <div class="collapse navbar-collapse" id="navbar-collapse-1">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="index.html">About</a></li>
-            <li><a href="resume.pdf">Resume</a></li>
-            <!-- <li><a href="projects.html">Projects</a></li> -->
-          </ul>
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="https://www.linkedin.com/in/everardorosales">LinkedIn</a><li>
-            <li><a href="http://github.com/everrosales">GitHub</a></li>
-            <li><a href="mailto:erosales@mit.edu">Contact</a>
-          </ul>
-        </div>
-      </div>
+  <header>
+    <div id='particles-js'>
+      <script src="js/app.js"></script>
+    </div>
+    <nav>
+      <a href="#">Home</a> &nbsp; &nbsp;
+      <a href="about.html">About</a> &nbsp; &nbsp;
+      <a href="projects">Projects</a> &nbsp; &nbsp;
+      <a href="work">Work Experience</a>  &nbsp; &nbsp;
+      <a href="contact" class='header-button'>CONTACT</a>
     </nav>
-    <div class="jumbotron" style="margin-bottom:0">
-        <div class="container">
-            <h1> Hello World!</h1>
-            <p> greetings from a poor college student </p>
-            <p> This site is currently in progress: </p>
-            <div class="progress">
-                 <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%;">
-                    20%
-                </div>
-            </div>
-        </div>
+    <div class='header-right'>
+      This is a header in case you didnt know.
     </div>
-    <div class="container">
-        <div class="page-header">
-            <h1>About me <small> Who am I?</small></h1>
-        </div>
-        <div class="row">
-            <div class="col-md-5">
-                <div class="container">
-                    <img class="featurette-image img-thumbnail" style="width:40%" alt="Boston" src="static/boston.jpg">
-                </div>
-            </div>
-            <div class="col-md-7" style="width:50%">
-                <p class="lead"> My name is Everardo Rosales and I am currently a sophomore at the Massachusetts Institute of Technology studying Computer Science (Course 6-3). I was orginally from Salinas, California a much smaller city than Boston and Cambridge.</p>
-            </div>
-        </div>
-        <div class="page-header">
-            <h1>Experience <small> What have I done?</small></h1>
-        </div>
-        <div class="row">
-            <div class="col-md-3">
-                <div class="container">
-                    <img class="featurette-image img-thumbnail" alt="601 Logo" src="static/601logo.png" style="height:25%">
-                </div>
-            </div>
-            <div class="col-md-8">
-                <h1><small>Fall 2014 - <em>MIT Intoduction EECS I Lab Assistant</em></small></h1>
-                <p class="lead">During the Fall semester I worked with students taking MIT's Introduction EECS I on coursework during labs. I was reponsible for helping students with these labs when they struggled and granting students credit for the lab after checking that they had sufficient understanding of the course material.</p>
-            </div>
-        </div>
-        <div class="page-header" style="margin-top:0; margin-bottom:0">
-        </div>
-        <div class="row">
-            <div class="col-md-8" style="width:70%">
-                <h1><small>Summer 2014 - <em>Google EP Intern</em></small></h1>
-                <p class="lead">This past summer I spent working as a Google Engineering Practicum Intern in Cambridge, MA. I worked with an Infoextraction subteam of Knowledge. My project was geared to making our tools easier to use and set up. This project involved two major parts. The first consisted of writing a simplified UI for making new data templates, <em>Schema</em>, to be used for my team's internal tool. The second was laying the foundation for upgrades of Schema versions so that the data produced using the old data is not completely lost without the intervention of one of our team members.</p>
-            </div>
-            <div class="col-md-3">
-                <div class="container">
-                    <br><br>
-                    <img class="featurette-image img-thumbnail" alt="Google Cambridge" src="static/googleCam.jpg" style="height=90%">
-                </div>
-            </div>
+    <div class='header-center'>
+      <h1>Full Stack Developer</h1>
+      <span>
+        <a href="contact" class='header-button'>
+          CONTACT
+        </a><a href="resume.pdf" class='header-button'>
+          RESUME
+        </a>
+      </span>
     </div>
+  </header>
+  <div class="main-content">
+
+    <div class="brief about">
+      <h2> A quick bit about me </h2>
+      <p>
+        I am currently a Sophomore at MIT studying Computer Science, with a
+        passion for programming of all kinds. I love going to hackathons, building,
+        and learning all of which are often at the expense of sleep. In terms of
+        developing, my primary focus is on web development, but this has started
+        to diverge in recent years.
+      </p>
+    </div>
+    <hr>
+    <div class="projects">
+      <h2> Recent projects </h2>
+      <div class="project-container">
+
+      <div class="project-mini">
+
+      </div>
+      <div class="project-mini">
+
+      </div>
+      <div class="project-mini">
+
+      </div>
+      </div>
+      <a href="projects" class="main-content-button"> See other projects </a>
+    </div>
+    <hr>
+    <div class="brief work">
+      <h2> Work History </h2>
+      <p>
+         Last summer I worked as a Google Engineering Practicum Intern in Cambridge,
+         MA with an Infoextraction subteam of Knowledge. My project was geared at
+         improving the usability of my teams internal tools.
+      </p>
+      <br>
+      <a href="work" class="main-content-button"> See other work experience </a>
+    </div>
+
+  </div>
+  <footer>
+    <div class="footer-content">
+    <nav>
+      <a href="about">About</a>
+      <a href="projects">Projects</a>
+      <a href="work">Work Experience</a>
+    </nav>
+    <!-- relevant info about me -->
+  </div>
+  </footer>
 </body>
 </html>
