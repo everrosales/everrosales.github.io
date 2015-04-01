@@ -7,10 +7,14 @@
   <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
   <link href="css/main.css" rel='stylesheet' type='text/css'>
   <link rel="icon" href="static/favicon.ico">
+  <!-- Bootstrap magic sauce -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
   <script>
-  $(document).ready(function() {
-    window.alert("Site currently under construction");
-  });
+  //$(document).ready(function() {
+  //  window.alert("Site currently under construction");
+  //});
   </script>
   <title>Everardo Rosales</title>
 </head>
@@ -19,15 +23,31 @@
     <div id='particles-js'>
       <script src="js/app.js"></script>
     </div>
-    <nav>
-      <a href="#">Home</a> &nbsp; &nbsp;
+    <nav class="row">
+      <div class="col-md-2">
+        <a href="#">Home</a>
+      </div>
+      <div class="col-md-2">
+        <a href="about.html">About</a>
+      </div>
+      <div class="col-md-2">
+        <a href="projects">Projects</a>
+      </div>
+      <div class="col-md-2">
+        <a href="work">Experience</a>
+      </div>
+      <div class="col-md-2">
+        <a href="contact" class='header-button'>CONTACT</a>
+      </div>
+      <!-- <a href="#">Home</a> &nbsp; &nbsp;
       <a href="about.html">About</a> &nbsp; &nbsp;
       <a href="projects">Projects</a> &nbsp; &nbsp;
       <a href="work">Work Experience</a>  &nbsp; &nbsp;
-      <a href="contact" class='header-button'>CONTACT</a>
+       -->
     </nav>
     <div class='header-right'>
-      This is a header in case you didnt know.
+      <!-- insert logo here -->
+      <em>Everardo Rosales</em>
     </div>
     <div class='header-center'>
       <h1>Full Stack Developer</h1>
@@ -40,9 +60,9 @@
       </span>
     </div>
   </header>
-  <div class="main-content">
+  <div class="_main-content container">
 
-    <div class="brief about">
+    <div class="_brief about">
       <h2> A quick bit about me </h2>
       <p>
         I am currently a Sophomore at MIT studying Computer Science, with a
@@ -53,24 +73,45 @@
       </p>
     </div>
     <hr>
-    <div class="projects">
-      <h2> Recent projects </h2>
-      <div class="project-container">
+    <div class="_brief">
+      <h2> Recent Projects </h2>
+    </div>
+    <div class="projects container-fluid">
+      <div class="row">
 
-      <div class="project-mini">
+        <div class="col-sm-6 col-md-4">
+          <div class="thumbnail">
+            <img src="..." alt="MakeMIT">
+            <div class="caption">
+              <h3>Force Feel'd</h3>
+            </div>
+          </div>
+        </div>
 
-      </div>
-      <div class="project-mini">
+        <div class="col-sm-6 col-md-4">
+          <div class="thumbnail">
+            <img src="..." alt="MakeMIT">
+            <div class="caption">
+              <h3></h3>
+            </div>
+          </div>
+        </div>
 
+        <div class="col-sm-6 col-md-4">
+          <div class="thumbnail">
+            <img src="..." alt="MakeMIT">
+            <div class="caption">
+              <h3>OpenDeed</h3>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="project-mini">
-
-      </div>
-      </div>
-      <a href="projects" class="main-content-button"> See other projects </a>
+    </div>
+    <div class="_button-container">
+      <a href="projects" class="_main-content-button"> See other recent projects </a>
     </div>
     <hr>
-    <div class="brief work">
+    <div class="_brief work">
       <h2> Work History </h2>
       <p>
          Last summer I worked as a Google Engineering Practicum Intern in Cambridge,
@@ -78,19 +119,32 @@
          improving the usability of my teams internal tools.
       </p>
       <br>
-      <a href="work" class="main-content-button"> See other work experience </a>
+      <div class="_button-container">
+        <a href="work" class="_main-content-button"> See other work experience </a>
+      </div>
     </div>
-
+    <br>
   </div>
-  <footer>
-    <div class="footer-content">
-    <nav>
-      <a href="about">About</a>
-      <a href="projects">Projects</a>
-      <a href="work">Work Experience</a>
-    </nav>
+  <footer class="footer">
+    <div class="container">
+      <!--<p class="text-muted">
+        This is my footer
+      </p> -->
+      <nav class="row pull-left">
+        <div class="col-md-2">
+          <a href="#">Home</a>
+        </div>
+        <div class="col-md-2">
+          <a href="about">About</a>
+        </div>
+        <div class="col-md-2">
+          <a href="projects">Projects</a>
+        </div>
+        <div class="col-md-2">
+          <a href="work">Experience</a>
+        </div>
     <!-- relevant info about me -->
-  </div>
+    </div>
   </footer>
 </body>
 </html>

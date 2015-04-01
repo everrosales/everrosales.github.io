@@ -1,22 +1,24 @@
+html {
+  overflow-x: hidden;
+}
+
 body {
   margin: 0px;
   padding: 0px;
-  height: 100%;
   width: 100%;
   font-family: 'Open Sans', sans-serif;
-
 }
 
 header {
   margin: 0px;
-  height: 400px;
+  height: 300px;
   width: 100%;
   color: #FFFFFF;
 }
 
 footer {
   padding: 40px;
-  height: 120px;
+  height: 100px;
   background-color: #455A64;
 }
 
@@ -31,12 +33,17 @@ header h1 {
 }
 
 nav a {
-  color: #FFFFFF;
-  text-decoration: none;
+  color: #FFFFFF ! important;
+  text-decoration: none ! important;
 }
 
 nav a:hover {
-  text-shadow: 0px 0px 4px #FFFFFF;
+  text-shadow: 0px 0px 4px #FFFFFF ! important;
+}
+
+
+header nav, footer nav{
+  width: 500px;
 }
 
 hr {
@@ -53,7 +60,7 @@ hr {
 
 #particles-js {
   margin: 0px;
-  height: 400px;
+  height: 300px;
   width: 100%;
   background-color: #000000;
   z-index: -1;
@@ -76,8 +83,8 @@ hr {
 }
 
 .header-button {
-  color: #FFFFFF;
-  text-decoration: none;
+  color: #FFFFFF ! important;
+  text-decoration: none ! important;
   margin: 20px;
   width: 100px;
   padding-right: 15px;
@@ -93,12 +100,12 @@ nav .header-button {
 }
 
 .header-button:hover, nav .header-button:hover {
-  color: #000000;
-  background-color: #FFFFFF;
+  color: #000000 ! important;
+  background-color: #FFFFFF ! important;
 }
 
 .main-content {
-  text-align: center;
+  text-align: center ! important;
   margin: auto;
   max-width: 1020px;
   padding-top: 50px;
@@ -129,12 +136,12 @@ nav .header-button {
   float: left;
 }
 
-.main-content-button {
+._main-content-button {
   color: #000000;
-  text-decoration: none;
+  text-decoration: none ! important;
   font-weight: 1.1em;
-  margin: 20px;
-  width: 100px;
+  margin: auto ! important;
+  /*width: 100px ! important;*/
   padding-right: 15px;
   padding-left: 15px;
   padding-top: 5px;
@@ -143,12 +150,24 @@ nav .header-button {
   border: 2px solid #000000;
 }
 
-.main-content-button:hover {
+._main-content-button:hover {
   color: #FFFFFF;
+  text-decoration: none ! important;
   background-color: #000000;
 }
 
-.brief {
+._brief {
+  text-align: center ! important;
   margin: auto;
   max-width: 700px;
+}
+
+._button-container {
+  width: 200px;
+  margin: auto;
+}
+
+.thumbnail {
+  margin-top: 20px;
+  border: none! important;
 }
