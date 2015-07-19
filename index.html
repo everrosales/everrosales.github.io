@@ -1,150 +1,143 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="UTF-8">
-  <script src="js/jquery.min.js"></script>
-  <script src="js/particles.min.js"></script>
-  <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-  <link href="css/main.css" rel='stylesheet' type='text/css'>
-  <link rel="icon" href="static/favicon.ico">
-  <!-- Bootstrap magic sauce -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<!doctype html>
 
-  <script>
-  $(document).ready(function() {
-    window.alert("Site currently under construction");
-  });
-  </script>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
   <title>Everardo Rosales</title>
+  <link href="css/main.css" rel="stylesheet">
+  <link href="static/mdl/material.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script src="static/mdl/material.min.js"></script>
 </head>
 <body>
-  <header>
-    <div id='particles-js'>
-      <script src="js/app.js"></script>
-    </div>
-    <nav class="row">
-      <div class="col-md-2">
-        <a href="#">Home</a>
-      </div>
-      <div class="col-md-2">
-        <a href="about.html">About</a>
-      </div>
-      <div class="col-md-2">
-        <a href="projects">Projects</a>
-      </div>
-      <div class="col-md-2">
-        <a href="work">Experience</a>
-      </div>
-      <div class="col-md-2">
-        <a href="contact" class='header-button'>CONTACT</a>
-      </div>
-      <!-- <a href="#">Home</a> &nbsp; &nbsp;
-      <a href="about.html">About</a> &nbsp; &nbsp;
-      <a href="projects">Projects</a> &nbsp; &nbsp;
-      <a href="work">Work Experience</a>  &nbsp; &nbsp;
-       -->
-    </nav>
-    <div class='header-right'>
-      <!-- insert logo here -->
-      <em>Everardo Rosales</em>
-    </div>
-    <div class='header-center'>
-      <h1>Full Stack Developer</h1>
-      <span>
-        <a href="contact" class='header-button'>
-          CONTACT
-        </a><a href="resume.pdf" class='header-button'>
-          RESUME
-        </a>
-      </span>
+  <!-- Uses a transparent header that draws on top of the layout's background -->
+<style>
+.layout-transparent {
+  background: url('static/suburbs.jpg') center / cover;
+}
+.layout-transparent .mdl-layout__header,
+.layout-transparent .mdl-layout__drawer-button {
+  /* This background is dark, so we set text to white. Use 87% black instead if
+     your background is light. */
+  color: white;
+}
+</style>
+<div class="layout-transparent mdl-layout mdl-js-layout">
+  <header class="mdl-layout__header mdl-layout__header--transparent">
+    <div class="mdl-layout__header-row">
+      <!-- Title -->
+      <span class="mdl-layout-title">Everardo Rosales</span>
+      <!-- Add spacer, to align navigation to the right -->
+      <div class="mdl-layout-spacer"></div>
+      <!-- Navigation -->
+      <nav class="mdl-navigation">
+        <a class="top-nav-link mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect " href="about.html">About</a>
+        <a class="top-nav-link mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect " href="projects.html">Projects</a>
+        <a class="top-nav-link mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect " href="work.html">Work</a>
+        <a class="top-nav-link mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect " href="contact.html">Contact</a>
+      </nav>
     </div>
   </header>
-  <div class="_main-content container">
-
-    <div class="_brief about">
-      <h2> A quick bit about me </h2>
-      <p>
-        I am currently a Sophomore at MIT studying Computer Science, with a
-        passion for programming of all kinds. I love going to hackathons, building,
-        and learning all of which are often at the expense of sleep. In terms of
-        developing, my primary focus is on web development, but this has started
-        to diverge in recent years.
-      </p>
-    </div>
-    <hr>
-    <div class="_brief">
-      <h2> Recent Projects </h2>
-    </div>
-    <div class="projects container-fluid">
-      <div class="row">
-
-        <div class="col-sm-6 col-md-4">
-          <div class="thumbnail">
-            <img src="..." alt="MakeMIT">
-            <div class="caption">
-              <h3>Force Feel'd</h3>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-sm-6 col-md-4">
-          <div class="thumbnail">
-            <img src="..." alt="MakeMIT">
-            <div class="caption">
-              <h3>Scavengr</h3>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-sm-6 col-md-4">
-          <div class="thumbnail">
-            <img src="..." alt="MakeMIT">
-            <div class="caption">
-              <h3>PetHub</h3>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="_button-container">
-      <a href="projects" class="_main-content-button"> See other recent projects </a>
-    </div>
-    <hr>
-    <div class="_brief work">
-      <h2> Work History </h2>
-      <p>
-         Last summer I worked as a Google Engineering Practicum Intern in Cambridge,
-         MA with an Infoextraction subteam of Knowledge. My project was geared at
-         improving the usability of my teams internal tools.
-      </p>
-      <br>
-      <div class="_button-container">
-        <a href="work" class="_main-content-button"> See other work experience </a>
-      </div>
-    </div>
-    <br>
+  <div class="mdl-layout__drawer">
+    <span class="mdl-layout-title">Quick Links</span>
+    <nav class="mdl-navigation">
+      <a class="mdl-navigation__link" href="">About</a>
+      <a class="mdl-navigation__link" href="">Projects</a>
+      <a class="mdl-navigation__link" href="">Work</a>
+      <a class="mdl-navigation__link" href="">Contact</a>
+    </nav>
   </div>
-  <footer class="footer">
-    <div class="container">
-      <!--<p class="text-muted">
-        This is my footer
-      </p> -->
-      <nav class="row pull-left">
-        <div class="col-md-2">
-          <a href="#">Home</a>
+  <main class="mdl-layout__content">
+    <div class="mdl-grid ">
+      <div class="mdl-card brief about-me-brief mdl-cell mdl-cell--8-col mdl-cell--middle">
+        <div id="about-me-brief-media" class="mdl-card__media brief-media mdl-color-text--grey-50">
+          <h3><a href="about.html" class="mdl-color-text--grey-50">
+            Developer | Hacker | Maker</a></h3>
         </div>
-        <div class="col-md-2">
-          <a href="about">About</a>
+        <div class="mdl-color-text--grey-600 mdl-card__supporting-text">
+          I am a Junior at MIT studying Computer Science, with a passion for
+          programming of all kinds. I love going to hackathons, building out projects,
+          and learnign about new frameworks and design patterns all of which are
+          often at the expense of sleep.
         </div>
-        <div class="col-md-2">
-          <a href="projects">Projects</a>
+      </div>
+
+      <div class="mdl-card brief projects-brief mdl-cell mdl-cell--8-col mdl-cell--middle">
+        <div id="projects-brief-media" class="mdl-card__media brief-media mdl-color-text--grey-50">
+          <h3><a href="projects.html" class="mdl-color-text--grey-50">Projects</a></h3>
         </div>
-        <div class="col-md-2">
-          <a href="work">Experience</a>
+        <div class="mdl-color-text--grey-600 mdl-card__supporting-text">
+          [insert filler text here and here and here etc.]
         </div>
-    <!-- relevant info about me -->
+        <div class="mdl-grid project-brief-row">
+          <div class="mdl-card-padding">
+            <div id="force-feeld-card" class="mdl-card mdl-shadow--2dp project-card-square">
+              <div class="mdl-card__title mdl-card--expand">
+                <h2 class="mdl-card__title-text">Force Feel'd</h2>
+              </div>
+              <div class="mdl-card__supporting-text">
+                Force feedback glove for VR.
+              </div>
+              <div class="mdl-card__actions mdl-card--border">
+                <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                More Info</a>
+              </div>
+            </div>
+          </div>
+          <div class="mdl-card-padding">
+            <div id="scavengr-card" class="mdl-card mdl-shadow--2dp project-card-square">
+              <div class="mdl-card__title mdl-card--expand">
+                <h2 class="mdl-card__title-text">Scavengr</h2>
+              </div>
+              <div class="mdl-card__supporting-text">
+                Location-based scavenger hunting app that allows you to both create and go on scavenger hunts.
+              </div>
+              <div class="mdl-card__actions mdl-card--border">
+                <a href="http://scavengr.meteor.com" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                 More Info</a>
+              </div>
+            </div>
+          </div>
+          <div class="mdl-card-padding">
+            <div id="pethub-card" class="mdl-card mdl-shadow--2dp project-card-square">
+              <div class="mdl-card__title mdl-card--expand">
+                <h2 class="mdl-card__title-text">PetHub</h2>
+              </div>
+              <div class="mdl-card__supporting-text">
+                Website mock for User Interface Class designed to help connect pet
+                owners with potential pet sitters.
+              </div>
+              <div class="mdl-card__actions mdl-card--border">
+                <a href="http://everrosales.github.io/PetHub"
+                class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                More Info</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mdl-card brief work-brief mdl-cell mdl-cell--8-col mdl-cell--middle">
+        <div id="work-brief-media" class="mdl-card__media brief-media mdl-color-text--grey-50">
+          <h3><a href="about.html" class="mdl-color-text--grey-50">Work Experience</a></h3>
+        </div>
+        <div class="mdl-color-text--grey-600 mdl-card__supporting-text">
+          [insert filler text here and here and here etc.]
+        </div>
+      </div>
+
+      <div class="mdl-card brief about-me-brief mdl-cell mdl-cell--8-col mdl-cell--middle">
+        <div id="about-me-brief-media" class="mdl-card__media brief-media mdl-color-text--grey-50">
+          <h3><a href="about.html" class="mdl-color-text--grey-50">About Me</a></h3>
+        </div>
+        <div class="mdl-color-text--grey-600 mdl-card__supporting-text">
+          [insert filler text here and here and here etc.]
+        </div>
+      </div>
     </div>
-  </footer>
+  </main>
+</div>
+  <script src="static/dml/material.min.js"></script>
 </body>
 </html>

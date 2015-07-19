@@ -1,173 +1,68 @@
-html {
-  overflow-x: hidden;
+a {
+  text-decoration: none;
 }
 
-body {
-  margin: 0px;
-  padding: 0px;
-  width: 100%;
-  font-family: 'Open Sans', sans-serif;
+div > .brief-media {
+  padding: 10px 20px;
+  background-color: #607D8B;
 }
 
-header {
-  margin: 0px;
-  height: 300px;
-  width: 100%;
-  color: #FFFFFF;
+div > .brief {
+  margin: 10px auto;
 }
 
-footer {
-  padding: 40px;
-  height: 100px;
-  background-color: #455A64;
-}
-
-header nav {
-  z-index: 2;
-  margin: 20px;
-  float: right;
-}
-
-header h1 {
-  font-size: 3em;
-}
-
-nav a {
-  color: #FFFFFF ! important;
-  text-decoration: none ! important;
-}
-
-nav a:hover {
-  text-shadow: 0px 0px 4px #FFFFFF ! important;
-}
-
-
-header nav, footer nav{
-  width: 500px;
-}
-
-hr {
-  color: #455A64;
-  border: 0;
-  height: 1px;
-  background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
-  background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
-  background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
-  background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
-  margin-top: 40px;
-  margin-bottom: 40px;
-}
-
-#particles-js {
-  margin: 0px;
-  height: 300px;
-  width: 100%;
-  background-color: #000000;
-  z-index: -1;
-  position: absolute;
-}
-
-.header-right {
-  margin: 20px;
-  float: left;
-}
-
-.header-center {
-  position: absolute;
-  top: 40px;
-  width: 100%;
-  z-index: 1;
-  margin: auto;
-  padding: 30px;
-  text-align: center;
-}
-
-.header-button {
-  color: #FFFFFF ! important;
-  text-decoration: none ! important;
-  margin: 20px;
-  width: 100px;
-  padding-right: 15px;
-  padding-left: 15px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  max-width: 100px;
-  border: 2px solid #FFFFFF;
-}
-
-nav .header-button {
-  margin-left: 5px;
-}
-
-.header-button:hover, nav .header-button:hover {
-  color: #000000 ! important;
-  background-color: #FFFFFF ! important;
-}
-
-.main-content {
-  text-align: center ! important;
-  margin: auto;
-  max-width: 1020px;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  padding-right: 32px;
-  padding-left: 32px;
-}
-
-.footer-content {
-  margin: auto;
-  margin-top: auto;
-  margin-bottom: auto;
-  width: 600px;
-  height: 100px;
-}
-
-.project-container {
-  height: 380px;
-  max-width: 1000px ! important;
-  padding: 15px;
-}
-
-.project-mini {
+.project-card-square.mdl-card {
   width: 300px;
-  height: 300px;
-  margin: 15px;
-  background: #000000;
-  float: left;
+  height: 350px;
 }
 
-._main-content-button {
-  color: #000000;
-  text-decoration: none ! important;
-  font-weight: 1.1em;
-  margin: auto ! important;
-  /*width: 100px ! important;*/
-  padding-right: 15px;
-  padding-left: 15px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  max-width: 100px;
-  border: 2px solid #000000;
-}
-
-._main-content-button:hover {
-  color: #FFFFFF;
-  text-decoration: none ! important;
-  background-color: #000000;
-}
-
-._brief {
-  text-align: center ! important;
+.mdl-card-padding {
   margin: auto;
-  max-width: 700px;
+  padding: 10px;
+
 }
 
-._button-container {
-  width: 200px;
+.project-card-square > .mdl-card__title {
+  color: #ffffff;
+  background-color: #607B8D;
+}
+
+.mdl-grid.project-brief-row {
   margin: auto;
+  /*display: inline-block;*/
 }
 
-.thumbnail {
-  margin-top: 20px;
-  border: none! important;
+.brief > div.mdl-card__supporting-text {
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 20px;
+}
+
+#scavengr-card > .mdl-card__title {
+  background: url('../static/images/scavengrScreen.png') bottom right 50% no-repeat #46B6AC;
+  background-size: 130px;
+}
+
+#force-feeld-card > .mdl-card__title {
+  background: url('../static/images/forcefeeld.jpg') bottom right 15% no-repeat #46B6AC;
+  background-size: 125%;
+}
+
+#pethub-card > .mdl-card__title {
+  background: url('../static/images/pethub.png') bottom left no-repeat #46B6AC;
+  background-size: 125%;
+}
+
+.mdl-card__title > h2 {
+  background-color: #607B8D;
+  padding: 10px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),
+    0 3px 1px -2px rgba(0,0,0,.2),
+    0 1px 5px 0 rgba(0,0,0,.12);
+}
+
+a.top-nav-link {
+  /*top: 10px;*/
+  color: #ffffff ! important;
+  text-decoration: none;
 }
