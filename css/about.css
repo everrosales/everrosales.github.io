@@ -1,0 +1,409 @@
+.layout-transparent {
+  background: url('../static/suburbs.jpg') center / cover;
+}
+.layout-transparent .mdl-layout__header,
+.layout-transparent .mdl-layout__drawer-button {
+  color: white;
+}
+
+header.mdl-layout__header.mdl-layout__header--transparent,
+.top-nav-link.mdl-button.mdl-button--colored.mdl-js-button.mdl-js-ripple-effect,
+.mdl-layout__drawer-button {
+  color: #ffffff ! important;
+}
+
+body::before {
+    background-image: url('../static/images/macbook-background.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    content: '';
+    will-change: transform;
+    z-index: -1;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    position: fixed;
+}
+
+body .tile-block {
+  font-family: 'Roboto', 'Helvetica', sans-serif;
+}
+
+.tile-block .tile-block__posts {
+  max-width: 1000px;
+  padding: 0;
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+  flex-shrink: 0;
+  padding-bottom: 40px;
+}
+
+.tile-block.mdl-layout .mdl-layout__content {
+  padding-top: 30px;
+  position: relative;
+  -webkit-overflow-scrolling: touch;
+}
+.tile-block .mdl-card {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  min-height: 360px;
+}
+.tile-block .mdl-card__title {
+  padding: 16px;
+  flex-grow: 1;
+}
+.tile-block .mdl-card__media {
+  box-sizing: border-box;
+  background-size: cover;
+  padding: 24px;
+  display: flex;
+  flex-grow: 1;
+  flex-direction: row;
+  align-items: flex-end;
+}
+.tile-block .mdl-card__media a,
+.tile-block .mdl-card__title a {
+  color: inherit;
+}
+.tile-block .mdl-card__supporting-text {
+  width: 100%;
+  padding: 16px;
+  min-height: 64px;
+  display: flex;
+  align-items: center;
+}
+.tile-block .mdl-card__supporting-text strong {
+  font-weight: 400;
+}
+.tile-block .mdl-card__media ~ .mdl-card__supporting-text {
+  min-height: 64px;
+}
+.tile-block .mdl-card__supporting-text:not(:last-child) {
+  box-sizing: border-box;
+  min-height: 76px;
+}
+.tile-block:not(.tile-block--blogpost) .mdl-card__supporting-text ~ .mdl-card__supporting-text {
+  border-top: 1px solid rgba(0,0,0,0.1);
+}
+
+.tile-block .mdl-card__actions:first-child {
+  margin-left: 0;
+}
+.tile-block .meta {
+  box-sizing: border-box;
+  padding: 16px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  height: auto;
+}
+.tile-block .meta > .meta__favorites{
+  flex-direction: row;
+  margin: 0 8px;
+  font-size: 13px;
+  font-weight: 500;
+}
+.tile-block .meta > .meta__favorites .material-icons {
+  font-size: 2em;
+  margin-left: 12px;
+}
+.tile-block .mdl-card .meta.meta--fill {
+  justify-content: space-between;
+}
+.tile-block .meta > *:first-child {
+  margin-right: 16px;
+}
+.tile-block .meta > * {
+  display: flex;
+  flex-direction: column;
+}
+.tile-block.is-small-screen .tile-block__posts > .mdl-card.coffee-pic {
+  order: 0;
+}
+.tile-block.is-small-screen .tile-block__posts > .mdl-card.something-else {
+  order: -1;
+}
+.tile-block .coffee-pic .mdl-card__media {
+  background-image: url('images/coffee.jpg');
+}
+/*.tile-block .something-else .mdl-card__media {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}*/
+.tile-block .something-else > button {
+  position: absolute;
+  top: 0;
+  right: 28px;
+  transform: translate(0px, -28px);
+}
+.tile-block .something-else .mdl-card__media {
+  font-size: 13px;
+  font-weight: 500;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+}
+.tile-block .something-else .mdl-card__media img {
+  width: 64px;
+  height: 64px;
+  margin-bottom: 10px;
+}
+.tile-block .something-else .mdl-card__supporting-text {
+  background-color: #FFFFFF;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+.tile-block .on-the-road-again .mdl-card__media {
+  background-image: url('images/road.jpg');
+}
+.tile-block .shopping .mdl-card__media {
+  background-image: url('images/shopping.jpg');
+}
+.tile-block .tile-block__posts > .project-nav {
+  margin: 12px 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  font-weight: 500;
+}
+.tile-block .tile-block__posts > .project-nav > .project-nav__button {
+  color: white;
+  text-decoration: none;
+}
+.tile-block .tile-block__posts > .project-nav .mdl-button {
+  color: rgba(0,0,0,0.54);
+  background-color: white;
+}
+.tile-block .tile-block__posts > .project-nav > .project-nav__button:first-child .mdl-button {
+  margin-right: 16px;
+}
+.tile-block .tile-block__posts > .project-nav > .project-nav__button:last-child .mdl-button {
+  margin-left: 16px;
+}
+.tile-block .mdl-card > a {
+  color: inherit;
+  text-decoration: none;
+  font-weight: inherit;
+}
+.tile-block .mdl-card h3 {
+  margin: 0;
+}
+.tile-block .mdl-card h3 a {
+  text-decoration: none;
+}
+.tile-block .mdl-card h3.quote:before, .tile-block .mdl-card h3.quote:after {
+  display: block;
+  font-size: 3em;
+  margin-top: 0.5em;
+}
+.tile-block .mdl-card h3.quote:before {
+  content: '“';
+}
+.tile-block .mdl-card h3.quote:after {
+  content: '”';
+}
+.tile-block--blogpost .custom-header {
+  background-color: transparent;
+}
+.tile-block--blogpost .tile-block__posts > .mdl-card .mdl-card__media {
+  background-image: url('images/road_big.jpg');
+  height: 280px;
+}
+.tile-block--blogpost .comments {
+  background-color: #EEE;
+}
+.tile-block--blogpost .meta > * {
+  align-items: center;
+}
+.tile-block--blogpost .meta + .mdl-card__supporting-text {
+  border: 0;
+  display: flex;
+  flex-direction: column;
+}
+.tile-block--blogpost .meta + .mdl-card__supporting-text p {
+  max-width: 512px;
+  margin: 16px auto;
+  font-size: 16px;
+  line-height: 28px;
+}
+
+.tile-block--blogpost .comments {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  padding: 32px;
+  box-sizing: border-box;
+}
+.tile-block--blogpost .comments > form {
+  display: flex;
+  flex-diretion: row;
+  margin-bottom: 16px;
+}
+.tile-block--blogpost .comments > form .mdl-textfield {
+  flex-grow: 1;
+  margin-right: 16px;
+  color: rgb(97, 97, 97);
+}
+/* Workaround for Firefox.
+ * User agent stylesheet kept overwriting the font in FF only.
+ */
+.tile-block--blogpost .comments > form .mdl-textfield .mdl-textfield__input {
+  font-family: 'Roboto', 'Helvetica', sans-serif;
+}
+.tile-block--blogpost .comments > form .mdl-textfield input,
+.tile-block--blogpost .comments > form .mdl-textfield textarea {
+  resize: none;
+}
+.tile-block--blogpost .comments > form button {
+  margin-top: 20px;
+  background-color: rgba(0, 0, 0, 0.24);
+  color: white;
+}
+.tile-block--blogpost .comments .comment {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+.tile-block--blogpost .comments .comment > .comment__header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 16px;
+}
+.tile-block--blogpost .comments .comment > .comment__header > .comment__avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 24px;
+  margin-right: 16px;
+}
+.tile-block--blogpost .comments .comment > .comment__header > .comment__author {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+.tile-block--blogpost .comments .comment > .comment__text {
+  line-height: 1.5em;
+}
+.tile-block--blogpost .comments .comment > .comment__actions {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 0.8em;
+  margin-top: 16px;
+}
+.tile-block--blogpost .comments .comment > .comment__actions button {
+  margin-right: 16px;
+  color: rgba(0, 0, 0, 0.24);
+}
+.tile-block--blogpost .comments .comment > .comment__answers {
+  padding-top: 32px;
+  padding-left: 48px;
+}
+
+.tile-block--blogpost .project-back {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  color: white;
+  z-index: 9999;
+}
+.tile-block .section-spacer {
+  flex-grow: 1;
+}
+.tile-block .something-else {
+  overflow: visible;
+  z-index: 10;
+}
+.tile-block .amazing .mdl-card__title {
+  background-color: #263238;
+}
+.tile-block .minilogo {
+  width: 44px;
+  height: 44px;
+  background-image: url('images/avatar.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 50%;
+  border-radius: 22px;
+  background-color: #F5F5F5;
+}
+
+/* Fixes for IE 10 */
+.mdl-grid {
+  display: flex !important;
+}
+
+.social-btn {
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  margin: 0 16px;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  opacity: 0.46;
+  border-radius: 2px;
+}
+.social-btn__twitter {
+  background-image: url('https://www.gstatic.com/images/icons/material/system/2x/post_twitter_black_24dp.png');
+}
+.social-btn__blogger {
+  background-image: url('https://www.gstatic.com/images/icons/material/system/2x/post_facebook_black_24dp.png');
+}
+.social-btn__gplus {
+  background-image: url('https://www.gstatic.com/images/icons/material/system/2x/post_gplus_black_24dp.png');
+}
+.social-btn__share {
+  color: rgba(0, 0, 0, 0.54);
+  background: transparent;
+}
+
+.tile-block .mdl-mini-footer {
+  margin-top: 80px;
+  height: 120px;
+  padding: 40px;
+  align-items: center;
+  background-color: white;
+  box-sizing: border-box;
+}
+
+#main-me-tile > .mdl-card__title {
+  background: url('../static/images/profile.jpg') bottom 50% left 30% no-repeat #46B6AC;
+  background-size: 100%;
+}
+
+#about-brief > .mdl-card__title {
+  background: url('http://sloansocialimpact.mit.edu/wp-content/uploads/2014/02/MIT_Dome_night1_Edit.jpg') bottom 50% right 50% no-repeat #46B6AC;
+  background-size: 150%;
+}
+
+#scavengr-card > .mdl-card__media {
+  background: url('../static/images/scavengrScreen.png') bottom 10px right 50% no-repeat #46B6AC;
+  background-size: 130px;
+}
+
+#force-feeld-card > .mdl-card__title {
+  background: url('../static/images/forcefeeld.jpg') bottom right 15% no-repeat #46B6AC;
+  background-size: 120%;
+}
+
+#pethub-card > .mdl-card__title {
+  background: url('../static/images/pethub.png') bottom left no-repeat #46B6AC;
+  background-size: 130%;
+}
+
+#recent-projects-header > .mdl-card__title {
+  background: url('...') bottom left no-repeat #46B6AC;
+  background-size: 125%;
+  cursor: pointer;
+}

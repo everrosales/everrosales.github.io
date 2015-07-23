@@ -1,152 +1,126 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="UTF-8">
-  <script src="js/jquery.min.js"></script>
-  <script src="js/particles.min.js"></script>
-  <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-  <link href="css/main.css" rel='stylesheet' type='text/css'>
-  <link rel="icon" href="static/favicon.ico">
-  <!-- Bootstrap magic sauce -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-
-  <script>
-  $(document).ready(function() {
-    window.alert("Site currently under construction");
-  });
-  </script>
-  <title>Everardo Rosales</title>
-</head>
-<body>
-  <header>
-    <div id='particles-js'>
-      <script src="js/app.js"></script>
-    </div>
-    <nav class="row">
-      <div class="col-md-2">
-        <a href="index.html">Home</a>
-      </div>
-      <div class="col-md-2">
-        <a href="about.html">About</a>
-      </div>
-      <div class="col-md-2">
-        <a href="#">Projects</a>
-      </div>
-      <div class="col-md-2">
-        <a href="work">Experience</a>
-      </div>
-      <div class="col-md-2">
-        <a href="contact" class='header-button'>CONTACT</a>
-      </div>
-      <!-- <a href="#">Home</a> &nbsp; &nbsp;
-      <a href="about.html">About</a> &nbsp; &nbsp;
-      <a href="projects">Projects</a> &nbsp; &nbsp;
-      <a href="work">Work Experience</a>  &nbsp; &nbsp;
-       -->
-    </nav>
-    <div class='header-right'>
-      <!-- insert logo here -->
-      <em>Everardo Rosales</em>
-    </div>
-    <div class='header-center'>
-      <h1>Projects</h1>
-      <h3>Web Apps - Android - Research</h3>
-      <!-- <span>
-        <a href="contact" class='header-button'>
-          CONTACT
-        </a><a href="resume.pdf" class='header-button'>
-          RESUME
-        </a>
-      </span>  -->
-    </div>
-  </header>
-  <div class="container" style="margin-top:20px;">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-sm-6 col-md-4 thumbnail">
-            <img src="static/images/forcefeeld.jpg" alt="Force Feel'd">
-            <div class="caption">
-              <h3 style="text-align:center">Force Feel'd <small>Winter 2015</small></h3>
-            </div>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Projects</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="static/mdl/material.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/project.css">
+    <script src="static/mdl/material.min.js"></script>
+  </head>
+  <body>
+    <div class="project-display mdl-layout mdl-js-layout has-drawer is-upgraded">
+      <header class="mdl-layout__header mdl-layout__header--transparent">
+        <div class="mdl-layout__header-row">
+          <span class="mdl-layout-title">Everardo Rosales</span>
+          <div class="mdl-layout-spacer"></div>
+          <nav class="mdl-navigation">
+            <a class="top-nav-link mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect " href="index.html">About</a>
+            <a class="top-nav-link mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect " href="projects.html">Projects</a>
+            <a class="top-nav-link mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect " href="work.html">Work</a>
+            <a class="top-nav-link mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect " href="contact.html">Contact</a>
+          </nav>
         </div>
-
-        <div class="col-sm-6 col-md-4 thumbnail">
-            <div class="android-screen-container">
-              <div style="width:300px;margin-left:auto;margin-right:auto">
-                <img class="android-screen" src="static/images/scavengerFramed.png" alt="Scavengr">
-                <img class="android-screen" src="static/images/scavengrScreen.png" alt="Scavengr">
+      </header>
+      <div class="mdl-layout__drawer">
+        <span class="mdl-layout-title">Quick Links</span>
+        <nav class="mdl-navigation">
+          <a class="mdl-navigation__link" href="">About</a>
+          <a class="mdl-navigation__link" href="">Projects</a>
+          <a class="mdl-navigation__link" href="">Work</a>
+          <a class="mdl-navigation__link" href="">Contact</a>
+        </nav>
+      </div>
+      <main class="mdl-layout__content">
+        <div class="project-display__posts mdl-grid">
+          <div id="project-main-card" class="mdl-card mdl-cell mdl-cell--8-col">
+            <div class="mdl-card__media mdl-color-text--grey-50">
+              <h3>Projects</h3>
+            </div>
+            <div class="mdl-card__supporting-text meta mdl-color-text--grey-600">
+              <div>
+                <span>I work on a lot of random stuff.</span>
               </div>
             </div>
-            <div class="caption">
-              <h3 style="text-align:center">Scavengr <small>Spring 2015</small></h3>
+          </div>
+          <div id="scavengr-card" class="mdl-card something-else mdl-cell mdl-cell--8-col mdl-cell--4-col-desktop">
+              <div class="mdl-card__media mdl-card__title">
+                <h2 class="mdl-card__title-text">Scavengr</h2>
+              </div>
+            <div class="mdl-card__supporting-text mdl-color-text--grey-600">
+              Location-based scavenger hunting app that allows you to both create and go on scavenger hunts.
+              (Spring 2015)
             </div>
-        </div>
-
-        <div class="col-sm-6 col-md-4 thumbnail">
-            <img src="static/images/pethub.png" alt="PetHub">
-            <div class="caption">
-              <h3 style="text-align:center">PetHub <small>Spring 2015</small></h3>
+            <div class="mdl-card__actions mdl-card--border">
+              <a href="http://scavengr.meteor.com" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+               More Info</a>
             </div>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-sm-6 col-md-4 thumbnail">
-            <img src="..." alt="OpenDeed">
-            <div class="caption">
-              <h3 style="text-align:center">OpenDeed <small>Spring 2015</small></h3>
+          </div>
+          <div id="force-feeld-card" class="mdl-card mdl-cell mdl-cell--6-col">
+            <div class="mdl-card__media mdl-card__title">
+              <h2 class="mdl-card__title-text">Force Feel'd</h2>
             </div>
-        </div>
-
-        <div class="col-sm-6 col-md-4 thumbnail">
-            <img style="height:225px;width:350px;" src="static/images/uneed.png" alt="Uneed">
-            <div class="caption">
-              <h3 style="text-align:center">Uneed <small>Winter 2015</small></h3>
+            <div class="mdl-card__supporting-text mdl-color-text--grey-600">
+              Force feedback glove for VR. (Spring 2015)
             </div>
-        </div>
-
-        <div class="col-sm-6 col-md-4 thumbnail">
-            <img src="static/images/roadrunner.png" alt="RoadRunner">
-            <div class="caption">
-              <h3 style="text-align:center">RoadRunner <small>Winter 2015</small></h3>
+            <div class="mdl-card__actions mdl-card--border">
+              <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+              More Info</a>
             </div>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-sm-offset-3 col-sm-6 col-md-offset-4 col-md-4 thumbnail">
-            <img src="static/images/classifi.png" alt="Classifi">
-            <div class="caption">
-              <h3 style="text-align:center">Classifi <small>Fall 2014</small></h3>
+          </div>
+          <div id="pethub-card" class="mdl-card mdl-cell mdl-cell--6-col">
+            <div class="mdl-card__media mdl-card__title">
+              <h2 class="mdl-card__title-text">PetHub</h2>
             </div>
+            <div class="mdl-card__supporting-text mdl-color-text--grey-600">
+              Website mock for User Interface Class designed to help connect pet
+              owners with potential pet sitters. (Spring 2015)
+            </div>
+            <div class="mdl-card__actions mdl-card--border">
+              <a href="http://everrosales.github.io/PetHub"
+              class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+              More Info</a>
+            </div>
+          </div>
+          <div id="hackathon-support" class="mdl-card mdl-cell mdl-cell--4-col">
+              <div class="mdl-card__media mdl-card__title">
+                <h2 class="mdl-card__title-text">Hackathons</h2>
+              </div>
+            <div class="mdl-card__supporting-text mdl-color-text--grey-600">
+              I love hackathons. Great people, awesome projects, and lots of building.
+            </div>
+            <div></div>
+          </div>
+          <div id="hackathon-header" class="mdl-card mdl-cell mdl-cell--8-col">
+            <div class="mdl-card__media mdl-card__title">
+            </div>
+          </div>
+          <!-- <nav class="project-nav mdl-cell mdl-cell--12-col">
+            <div class="section-spacer"></div>
+            <a href="entry.html" class="project-nav__button">
+              More
+              <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+                <i class="material-icons">arrow_forward</i>
+              </button>
+            </a>
+          </nav> -->
         </div>
-      </div>
-
-
+        <!-- <footer class="mdl-mini-footer">
+          <div class="mdl-mini-footer--left-section">
+            <button class="mdl-mini-footer--social-btn social-btn social-btn__twitter"></button>
+            <button class="mdl-mini-footer--social-btn social-btn social-btn__blogger"></button>
+            <button class="mdl-mini-footer--social-btn social-btn social-btn__gplus"></button>
+          </div>
+          <div class="mdl-mini-footer--right-section">
+            <button class="mdl-mini-footer--social-btn social-btn__share"><i class="material-icons">share</i></button>
+          </div>
+        </footer> -->
+      </main>
+      <div class="mdl-layout__obfuscator"></div>
     </div>
-
-  </div>
-  <footer class="footer">
-    <div class="container">
-      <!--<p class="text-muted">
-        This is my footer
-      </p> -->
-      <nav class="row pull-left">
-        <div class="col-md-2">
-          <a href="#">Home</a>
-        </div>
-        <div class="col-md-2">
-          <a href="about">About</a>
-        </div>
-        <div class="col-md-2">
-          <a href="projects">Projects</a>
-        </div>
-        <div class="col-md-2">
-          <a href="work">Experience</a>
-        </div>
-    <!-- relevant info about me -->
-    </div>
-  </footer>
-</body>
+    <script src="../../material.min.js"></script>
+  </body>
 </html>
