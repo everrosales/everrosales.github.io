@@ -347,23 +347,6 @@ body .project-display {
   border-radius: 2px;
 }
 
-.social-btn__twitter {
-  background-image: url('https://www.gstatic.com/images/icons/material/system/2x/post_twitter_black_24dp.png');
-}
-
-.social-btn__blogger {
-  background-image: url('https://www.gstatic.com/images/icons/material/system/2x/post_facebook_black_24dp.png');
-}
-
-.social-btn__gplus {
-  background-image: url('https://www.gstatic.com/images/icons/material/system/2x/post_gplus_black_24dp.png');
-}
-
-.social-btn__share {
-  color: rgba(0, 0, 0, 0.54);
-  background: transparent;
-}
-
 .project-display .mdl-mini-footer {
   margin-top: 80px;
   height: 120px;
@@ -380,25 +363,40 @@ body .project-display {
 
 #force-feeld-card > .mdl-card__media {
   background: url('../static/images/forcefeeld.jpg') bottom right 15% no-repeat #46B6AC;
-  background-size: 100%;
+  background-size: cover;
 }
 
 #pethub-card > .mdl-card__media {
   background: url('../static/images/pethub.png') top left no-repeat #46B6AC;
-  background-size: 100%;
+  background-size: cover;
 }
 
 #project-main-card > .mdl-card__media {
   background: url('../static/images/macbook-night.jpg') top left 50% no-repeat #46B6AC;
-  background-size: 100%;
+  background-size: cover;
 }
 
 #hackathon-header > .mdl-card__media {
   background: url('../static/images/makemit.jpg') bottom 50% left 50% no-repeat #46B6AC;
-  background-size: 100%;
+  background-size: cover;
 }
 
 #hackathon-support > .mdl-card__media {
   background: url('../static/images/hackmit.jpg') bottom 50% left 50% no-repeat #46B6AC;
-  background-size: 150%;
+  background-size: cover;
+}
+
+#makemit > .mdl-card__media {
+  background: url('../static/images/forcefeeldglove.jpg') top 30% left 50% no-repeat #46B6AC;
+  background-size: cover;
+}
+
+#hackmit > .mdl-card__media {
+  background: url('../static/images/classifi.png') top 50% left 50% no-repeat #46B6AC;
+  background-size: cover;
+}
+
+#blockhack > .mdl-card__media {
+  background: url('../static/images/blockchain.png') top left 50% no-repeat #46B6AC;
+  background-size: cover;
 }

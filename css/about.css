@@ -1,11 +1,3 @@
-.layout-transparent {
-  background: url('../static/suburbs.jpg') center / cover;
-}
-.layout-transparent .mdl-layout__header,
-.layout-transparent .mdl-layout__drawer-button {
-  color: white;
-}
-
 header.mdl-layout__header.mdl-layout__header--transparent,
 .top-nav-link.mdl-button.mdl-button--colored.mdl-js-button.mdl-js-ripple-effect,
 .mdl-layout__drawer-button {
@@ -13,7 +5,7 @@ header.mdl-layout__header.mdl-layout__header--transparent,
 }
 
 body::before {
-    background-image: url('../static/images/macbook-background.jpg');
+    background-image: url('../static/suburbs.jpg');
     background-size: cover;
     background-attachment: fixed;
     content: '';
@@ -26,11 +18,11 @@ body::before {
     position: fixed;
 }
 
-body .tile-block {
+body .project-display {
   font-family: 'Roboto', 'Helvetica', sans-serif;
 }
 
-.tile-block .tile-block__posts {
+.project-display .project-display__posts {
   max-width: 1000px;
   padding: 0;
   display: flex;
@@ -40,22 +32,22 @@ body .tile-block {
   padding-bottom: 40px;
 }
 
-.tile-block.mdl-layout .mdl-layout__content {
+.project-display.mdl-layout .mdl-layout__content {
   padding-top: 30px;
   position: relative;
   -webkit-overflow-scrolling: touch;
 }
-.tile-block .mdl-card {
+.project-display .mdl-card {
   display: flex;
   flex-direction: column;
   align-items: stretch;
   min-height: 360px;
 }
-.tile-block .mdl-card__title {
+.project-display .mdl-card__title {
   padding: 16px;
   flex-grow: 1;
 }
-.tile-block .mdl-card__media {
+.project-display .mdl-card__media {
   box-sizing: border-box;
   background-size: cover;
   padding: 24px;
@@ -64,35 +56,35 @@ body .tile-block {
   flex-direction: row;
   align-items: flex-end;
 }
-.tile-block .mdl-card__media a,
-.tile-block .mdl-card__title a {
+.project-display .mdl-card__media a,
+.project-display .mdl-card__title a {
   color: inherit;
 }
-.tile-block .mdl-card__supporting-text {
+.project-display .mdl-card__supporting-text {
   width: 100%;
   padding: 16px;
   min-height: 64px;
   display: flex;
   align-items: center;
 }
-.tile-block .mdl-card__supporting-text strong {
+.project-display .mdl-card__supporting-text strong {
   font-weight: 400;
 }
-.tile-block .mdl-card__media ~ .mdl-card__supporting-text {
+.project-display .mdl-card__media ~ .mdl-card__supporting-text {
   min-height: 64px;
 }
-.tile-block .mdl-card__supporting-text:not(:last-child) {
+.project-display .mdl-card__supporting-text:not(:last-child) {
   box-sizing: border-box;
   min-height: 76px;
 }
-.tile-block:not(.tile-block--blogpost) .mdl-card__supporting-text ~ .mdl-card__supporting-text {
+.project-display:not(.project-display--blogpost) .mdl-card__supporting-text ~ .mdl-card__supporting-text {
   border-top: 1px solid rgba(0,0,0,0.1);
 }
 
-.tile-block .mdl-card__actions:first-child {
+.project-display .mdl-card__actions:first-child {
   margin-left: 0;
 }
-.tile-block .meta {
+.project-display .meta {
   box-sizing: border-box;
   padding: 16px;
   display: flex;
@@ -101,70 +93,70 @@ body .tile-block {
   justify-content: flex-start;
   height: auto;
 }
-.tile-block .meta > .meta__favorites{
+.project-display .meta > .meta__favorites{
   flex-direction: row;
   margin: 0 8px;
   font-size: 13px;
   font-weight: 500;
 }
-.tile-block .meta > .meta__favorites .material-icons {
+.project-display .meta > .meta__favorites .material-icons {
   font-size: 2em;
   margin-left: 12px;
 }
-.tile-block .mdl-card .meta.meta--fill {
+.project-display .mdl-card .meta.meta--fill {
   justify-content: space-between;
 }
-.tile-block .meta > *:first-child {
+.project-display .meta > *:first-child {
   margin-right: 16px;
 }
-.tile-block .meta > * {
+.project-display .meta > * {
   display: flex;
   flex-direction: column;
 }
-.tile-block.is-small-screen .tile-block__posts > .mdl-card.coffee-pic {
+.project-display.is-small-screen .project-display__posts > .mdl-card.coffee-pic {
   order: 0;
 }
-.tile-block.is-small-screen .tile-block__posts > .mdl-card.something-else {
+.project-display.is-small-screen .project-display__posts > .mdl-card.something-else {
   order: -1;
 }
-.tile-block .coffee-pic .mdl-card__media {
+.project-display .coffee-pic .mdl-card__media {
   background-image: url('images/coffee.jpg');
 }
-/*.tile-block .something-else .mdl-card__media {
+/*.project-display .something-else .mdl-card__media {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }*/
-.tile-block .something-else > button {
+.project-display .something-else > button {
   position: absolute;
   top: 0;
   right: 28px;
   transform: translate(0px, -28px);
 }
-.tile-block .something-else .mdl-card__media {
+.project-display .something-else .mdl-card__media {
   font-size: 13px;
   font-weight: 500;
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
 }
-.tile-block .something-else .mdl-card__media img {
+.project-display .something-else .mdl-card__media img {
   width: 64px;
   height: 64px;
   margin-bottom: 10px;
 }
-.tile-block .something-else .mdl-card__supporting-text {
+.project-display .something-else .mdl-card__supporting-text {
   background-color: #FFFFFF;
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
 }
-.tile-block .on-the-road-again .mdl-card__media {
+.project-display .on-the-road-again .mdl-card__media {
   background-image: url('images/road.jpg');
 }
-.tile-block .shopping .mdl-card__media {
+.project-display .shopping .mdl-card__media {
   background-image: url('images/shopping.jpg');
 }
-.tile-block .tile-block__posts > .project-nav {
+.project-display .project-display__posts > .project-nav {
   margin: 12px 15px;
   display: flex;
   flex-direction: row;
@@ -173,68 +165,68 @@ body .tile-block {
   color: white;
   font-weight: 500;
 }
-.tile-block .tile-block__posts > .project-nav > .project-nav__button {
+.project-display .project-display__posts > .project-nav > .project-nav__button {
   color: white;
   text-decoration: none;
 }
-.tile-block .tile-block__posts > .project-nav .mdl-button {
+.project-display .project-display__posts > .project-nav .mdl-button {
   color: rgba(0,0,0,0.54);
   background-color: white;
 }
-.tile-block .tile-block__posts > .project-nav > .project-nav__button:first-child .mdl-button {
+.project-display .project-display__posts > .project-nav > .project-nav__button:first-child .mdl-button {
   margin-right: 16px;
 }
-.tile-block .tile-block__posts > .project-nav > .project-nav__button:last-child .mdl-button {
+.project-display .project-display__posts > .project-nav > .project-nav__button:last-child .mdl-button {
   margin-left: 16px;
 }
-.tile-block .mdl-card > a {
+.project-display .mdl-card > a {
   color: inherit;
   text-decoration: none;
   font-weight: inherit;
 }
-.tile-block .mdl-card h3 {
+.project-display .mdl-card h3 {
   margin: 0;
 }
-.tile-block .mdl-card h3 a {
+.project-display .mdl-card h3 a {
   text-decoration: none;
 }
-.tile-block .mdl-card h3.quote:before, .tile-block .mdl-card h3.quote:after {
+.project-display .mdl-card h3.quote:before, .project-display .mdl-card h3.quote:after {
   display: block;
   font-size: 3em;
   margin-top: 0.5em;
 }
-.tile-block .mdl-card h3.quote:before {
+.project-display .mdl-card h3.quote:before {
   content: '“';
 }
-.tile-block .mdl-card h3.quote:after {
+.project-display .mdl-card h3.quote:after {
   content: '”';
 }
-.tile-block--blogpost .custom-header {
+.project-display--blogpost .custom-header {
   background-color: transparent;
 }
-.tile-block--blogpost .tile-block__posts > .mdl-card .mdl-card__media {
+.project-display--blogpost .project-display__posts > .mdl-card .mdl-card__media {
   background-image: url('images/road_big.jpg');
   height: 280px;
 }
-.tile-block--blogpost .comments {
+.project-display--blogpost .comments {
   background-color: #EEE;
 }
-.tile-block--blogpost .meta > * {
+.project-display--blogpost .meta > * {
   align-items: center;
 }
-.tile-block--blogpost .meta + .mdl-card__supporting-text {
+.project-display--blogpost .meta + .mdl-card__supporting-text {
   border: 0;
   display: flex;
   flex-direction: column;
 }
-.tile-block--blogpost .meta + .mdl-card__supporting-text p {
+.project-display--blogpost .meta + .mdl-card__supporting-text p {
   max-width: 512px;
   margin: 16px auto;
   font-size: 16px;
   line-height: 28px;
 }
 
-.tile-block--blogpost .comments {
+.project-display--blogpost .comments {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -242,12 +234,12 @@ body .tile-block {
   padding: 32px;
   box-sizing: border-box;
 }
-.tile-block--blogpost .comments > form {
+.project-display--blogpost .comments > form {
   display: flex;
   flex-diretion: row;
   margin-bottom: 16px;
 }
-.tile-block--blogpost .comments > form .mdl-textfield {
+.project-display--blogpost .comments > form .mdl-textfield {
   flex-grow: 1;
   margin-right: 16px;
   color: rgb(97, 97, 97);
@@ -255,44 +247,44 @@ body .tile-block {
 /* Workaround for Firefox.
  * User agent stylesheet kept overwriting the font in FF only.
  */
-.tile-block--blogpost .comments > form .mdl-textfield .mdl-textfield__input {
+.project-display--blogpost .comments > form .mdl-textfield .mdl-textfield__input {
   font-family: 'Roboto', 'Helvetica', sans-serif;
 }
-.tile-block--blogpost .comments > form .mdl-textfield input,
-.tile-block--blogpost .comments > form .mdl-textfield textarea {
+.project-display--blogpost .comments > form .mdl-textfield input,
+.project-display--blogpost .comments > form .mdl-textfield textarea {
   resize: none;
 }
-.tile-block--blogpost .comments > form button {
+.project-display--blogpost .comments > form button {
   margin-top: 20px;
   background-color: rgba(0, 0, 0, 0.24);
   color: white;
 }
-.tile-block--blogpost .comments .comment {
+.project-display--blogpost .comments .comment {
   display: flex;
   flex-direction: column;
   align-items: stretch;
 }
-.tile-block--blogpost .comments .comment > .comment__header {
+.project-display--blogpost .comments .comment > .comment__header {
   display: flex;
   flex-direction: row;
   align-items: center;
   margin-bottom: 16px;
 }
-.tile-block--blogpost .comments .comment > .comment__header > .comment__avatar {
+.project-display--blogpost .comments .comment > .comment__header > .comment__avatar {
   width: 48px;
   height: 48px;
   border-radius: 24px;
   margin-right: 16px;
 }
-.tile-block--blogpost .comments .comment > .comment__header > .comment__author {
+.project-display--blogpost .comments .comment > .comment__header > .comment__author {
   flex-grow: 1;
   display: flex;
   flex-direction: column;
 }
-.tile-block--blogpost .comments .comment > .comment__text {
+.project-display--blogpost .comments .comment > .comment__text {
   line-height: 1.5em;
 }
-.tile-block--blogpost .comments .comment > .comment__actions {
+.project-display--blogpost .comments .comment > .comment__actions {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -300,33 +292,33 @@ body .tile-block {
   font-size: 0.8em;
   margin-top: 16px;
 }
-.tile-block--blogpost .comments .comment > .comment__actions button {
+.project-display--blogpost .comments .comment > .comment__actions button {
   margin-right: 16px;
   color: rgba(0, 0, 0, 0.24);
 }
-.tile-block--blogpost .comments .comment > .comment__answers {
+.project-display--blogpost .comments .comment > .comment__answers {
   padding-top: 32px;
   padding-left: 48px;
 }
 
-.tile-block--blogpost .project-back {
+.project-display--blogpost .project-back {
   position: absolute;
   top: 16px;
   left: 16px;
   color: white;
   z-index: 9999;
 }
-.tile-block .section-spacer {
+.project-display .section-spacer {
   flex-grow: 1;
 }
-.tile-block .something-else {
+.project-display .something-else {
   overflow: visible;
   z-index: 10;
 }
-.tile-block .amazing .mdl-card__title {
+.project-display .amazing .mdl-card__title {
   background-color: #263238;
 }
-.tile-block .minilogo {
+.project-display .minilogo {
   width: 44px;
   height: 44px;
   background-image: url('images/avatar.png');
@@ -354,21 +346,8 @@ body .tile-block {
   opacity: 0.46;
   border-radius: 2px;
 }
-.social-btn__twitter {
-  background-image: url('https://www.gstatic.com/images/icons/material/system/2x/post_twitter_black_24dp.png');
-}
-.social-btn__blogger {
-  background-image: url('https://www.gstatic.com/images/icons/material/system/2x/post_facebook_black_24dp.png');
-}
-.social-btn__gplus {
-  background-image: url('https://www.gstatic.com/images/icons/material/system/2x/post_gplus_black_24dp.png');
-}
-.social-btn__share {
-  color: rgba(0, 0, 0, 0.54);
-  background: transparent;
-}
 
-.tile-block .mdl-mini-footer {
+.project-display .mdl-mini-footer {
   margin-top: 80px;
   height: 120px;
   padding: 40px;
@@ -377,33 +356,44 @@ body .tile-block {
   box-sizing: border-box;
 }
 
-#main-me-tile > .mdl-card__title {
-  background: url('../static/images/profile.jpg') bottom 50% left 30% no-repeat #46B6AC;
-  background-size: 100%;
-}
-
-#about-brief > .mdl-card__title {
-  background: url('http://sloansocialimpact.mit.edu/wp-content/uploads/2014/02/MIT_Dome_night1_Edit.jpg') bottom 50% right 50% no-repeat #46B6AC;
-  background-size: 150%;
-}
-
 #scavengr-card > .mdl-card__media {
   background: url('../static/images/scavengrScreen.png') bottom 10px right 50% no-repeat #46B6AC;
   background-size: 130px;
 }
 
-#force-feeld-card > .mdl-card__title {
+#force-feeld-card > .mdl-card__media {
   background: url('../static/images/forcefeeld.jpg') bottom right 15% no-repeat #46B6AC;
-  background-size: 120%;
+  background-size: cover;
 }
 
-#pethub-card > .mdl-card__title {
-  background: url('../static/images/pethub.png') bottom left no-repeat #46B6AC;
-  background-size: 130%;
+#pethub-card > .mdl-card__media {
+  background: url('../static/images/pethub.png') top left no-repeat #46B6AC;
+  background-size: cover;
 }
 
-#recent-projects-header > .mdl-card__title {
-  background: url('...') bottom left no-repeat #46B6AC;
-  background-size: 125%;
-  cursor: pointer;
+#main-me-tile > .mdl-card__media {
+  background: url('../static/images/profile.jpg') top left 50% no-repeat #46B6AC;
+  background-size: cover;
+}
+
+#about-brief > .mdl-card__media {
+  background: url('http://sloansocialimpact.mit.edu/wp-content/uploads/2014/02/MIT_Dome_night1_Edit.jpg')
+              bottom 50% left 50% no-repeat #46B6AC;
+  background-size: cover;
+}
+
+#recent-projects-header > .mdl-card__media {
+  background: url('../static/images/macbook-background.jpg') bottom 50% left 50% no-repeat #46B6AC;
+  background-size: cover;
+  cursor: pointer ! important;
+}
+
+#hackathon-header > .mdl-card__media {
+  background: url('../static/images/hackmit.jpg') top 20% left no-repeat #46B6AC;
+  background-size: cover;
+}
+
+#hackathon-support > .mdl-card__media {
+  background: url('../static/images/hackathons.jpg') bottom 50% left 50% no-repeat #46B6AC;
+  background-size: cover;
 }
