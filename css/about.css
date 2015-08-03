@@ -29,7 +29,6 @@ body .project-display {
   width: 100%;
   margin: 0 auto;
   flex-shrink: 0;
-  padding-bottom: 40px;
 }
 
 .project-display.mdl-layout .mdl-layout__content {
@@ -396,4 +395,21 @@ body .project-display {
 #hackathon-support > .mdl-card__media {
   background: url('../static/images/hackathons.jpg') bottom 50% left 50% no-repeat #46B6AC;
   background-size: cover;
+}
+
+.project-display .mdl-mini-footer {
+  margin-top: 40px;
+  height: 120px;
+  padding: 40px;
+  align-items: center;
+  background-color: white;
+  box-sizing: border-box;
+}
+
+.footer-link {
+  color: #FFFFFF ! important;
+}
+
+.footer-link:hover {
+  color: #46B6AC ! important;
 }
