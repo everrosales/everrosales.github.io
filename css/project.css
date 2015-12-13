@@ -416,3 +416,8 @@ body .project-display {
   background: url('../static/images/inflowence.png') top right no-repeat #46B6AC;
   background-size: cover;
 }
+
+#yhack > .mdl-card__media {
+  background: url('../static/images/avalon.jpg') top no-repeat #46B6AC;
+  background-size: cover;
+}
