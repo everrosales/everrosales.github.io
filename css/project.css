@@ -382,6 +382,11 @@ body .project-display {
   background-size: cover;
 }
 
+#lux-card > .mdl-card__media {
+  background: url('../static/images/lux.jpg') bottom 0px right 50% no-repeat #46B6AC;
+  background-size: cover;
+}
+
 #project-main-card > .mdl-card__media {
   background: url('../static/images/macbook-night.jpg') top left 50% no-repeat #46B6AC;
   background-size: cover;
@@ -394,6 +399,11 @@ body .project-display {
 
 #hackathon-support > .mdl-card__media {
   background: url('../static/images/hackmit.jpg') bottom 50% left 50% no-repeat #46B6AC;
+  background-size: cover;
+}
+
+#makemit17 > .mdl-card__media {
+  background: url('../static/images/lux-proj.jpg') bottom 0px left 50% no-repeat #46B6AC;
   background-size: cover;
 }
 

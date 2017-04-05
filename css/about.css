@@ -355,6 +355,11 @@ body .project-display {
   box-sizing: border-box;
 }
 
+#lux-card > .mdl-card__media {
+  background: url('../static/images/lux.jpg') bottom 0px right 50% no-repeat #46B6AC;
+  background-size: cover;
+}
+
 #scavengr-card > .mdl-card__media {
   background: url('../static/images/scavengrScreen.png') bottom 10px right 50% no-repeat #46B6AC;
   background-size: 130px;
