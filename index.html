@@ -1,159 +1,222 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>Everardo Rosales</title>
-  <link href="css/main.css" rel="stylesheet">
-  <link href="css/about.css" rel="stylesheet">
-  <link href="static/mdl/material.min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <script src="static/mdl/material.min.js"></script>
-</head>
-<body>
-<script>
-projectsRedirect = function () {
-  window.location = 'projects.html';
-}
-</script>
-<div class="project-display layout-transparent mdl-layout mdl-js-layout">
-  <header class="mdl-layout__header mdl-layout__header--transparent">
-    <div class="mdl-layout__header-row">
-      <span class="mdl-layout-title">Everardo Rosales</span>
-      <div class="mdl-layout-spacer"></div>
-      <nav class="mdl-navigation">
-        <a class="top-nav-link mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect " href="#">About</a>
-        <a class="top-nav-link mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect " href="projects.html">Projects</a>
-        <a class="top-nav-link mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect " href="resume.pdf">Resume</a>
-        <a class="top-nav-link mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect " href="http://github.com/everrosales">Github</a>
-        <a class="top-nav-link mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect " href="http://linkedin.com/in/everrosales">Linkedin</a>
-        <a class="top-nav-link mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect " href="mailto:erosales@mit.edu">Contact</a>
-      </nav>
-    </div>
-  </header>
-  <div class="mdl-layout__drawer">
-    <span class="mdl-layout-title">Quick Links</span>
-    <nav class="mdl-navigation">
-      <a class="mdl-navigation__link" href="#">About</a>
-      <a class="mdl-navigation__link" href="projects.html">Projects</a>
-      <a class="mdl-navigation__link" href="resume.pdf">Resume</a>
-      <a class="mdl-navigation__link" href="http://github.com/everrosales">Github</a>
-      <a class="mdl-navigation__link" href="http://linkedin.com/in/everardorosales">Linkedin</a>
-      <a class="mdl-navigation__link" href="mailto:erosales@mit.edu">Contact</a>
-    </nav>
-  </div>
-  <main class="mdl-layout__content">
-    <div class="project-display__posts mdl-grid">
-      <header id="main-me-tile" class="mdl-card mdl-cell mdl-cell--8-col mdl-cell--8-col-desktop">
-        <div class="mdl-card__media mdl-card__title mdl-color-text--white">
-          <h2 class="mdl-card__title-text mdl-card__title-text-large">Developer | Hacker | Maker</h2>
-        </div>
-      </header>
-      <div id="about-brief" class="mdl-card mdl-cell mdl-cell--4-col mdl-cell--4-col-desktop">
-          <div class="mdl-card__media mdl-card__title">
-            <h2 class="mdl-card__title-text">/me</h2>
-          </div>
-        <div class="mdl-card__supporting-text mdl-color-text--grey-600">
-          I am a Senior at MIT studying Computer Science, with a passion for
-          programming of all kinds. Currently, I have been doing more systems
-          development (operating systems, distributed systems, and performance).
-          I love going to hackathons, building out projects, and learning about
-          new frameworks and design patterns all of which are
-          often at the expense of sleep.
-        </div>
-        <div></div>
-      </div>
-      <header id="recent-projects-header" class="mdl-card something-else mdl-cell mdl-cell--12-col mdl-cell--12-col-desktop mdl-cell--4-col-phone">
-          <div class="mdl-card__media mdl-card__title" onclick="projectsRedirect()">
-            <h2 class="mdl-card__title-text">Recent Projects</h2>
-          </div>
-        <div></div>
-      </header>
-      <div id="lux-card" class="mdl-card mdl-cell mdl-cell--4-col mdl-cell--4-col-desktop">
-          <div class="mdl-card__media mdl-card__title">
-            <h2 class="mdl-card__title-text">LUX</h2>
-          </div>
-        <div class="mdl-card__supporting-text mdl-color-text--grey-600">
-          Autonomous tracking work light (Spring 2017)
-        </div>
-        <div class="mdl-card__actions mdl-card--border">
-          <a href="http://david-rosales.github.io/ItsLit" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-           More Info</a>
-        </div>
-      </div>
-      <div id="force-feeld-card" class="mdl-card mdl-cell mdl-cell--4-col">
-        <div class="mdl-card__media mdl-card__title">
-          <h2 class="mdl-card__title-text">Force Feel'd</h2>
-        </div>
-        <div class="mdl-card__supporting-text mdl-color-text--grey-600">
-          Force feedback glove for VR. (Spring 2015)
-        </div>
-        <div class="mdl-card__actions mdl-card--border">
-          <a href="http://everrosales.github.io/MakeMIT-2015"
-          class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-          More Info</a>
-        </div>
-      </div>
-      <div id="pethub-card" class="mdl-card mdl-cell mdl-cell--4-col">
-        <div class="mdl-card__media mdl-card__title">
-          <h2 class="mdl-card__title-text">PetHub</h2>
-        </div>
-        <div class="mdl-card__supporting-text mdl-color-text--grey-600">
-          Website mock for User Interface Class designed to help connect pet
-          owners with potential pet sitters. (Spring 2015)
-        </div>
-        <div class="mdl-card__actions mdl-card--border">
-          <a href="http://everrosales.github.io/PetHub"
-          class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-          More Info</a>
-        </div>
-      </div>
-      <header id="hackathon-header" class="mdl-card something-else mdl-cell mdl-cell--6-col mdl-cell--6-col-desktop mdl-cell--4-col-phone">
-          <div class="mdl-card__media mdl-card__title" onclick="projectsRedirect()">
-            <h2 class="mdl-card__title-text">Hackathons</h2>
-          </div>
-      </header>
-      <div id="hackathon-support" class="mdl-card mdl-cell mdl-cell--6-col">
-        <div class="mdl-card__media mdl-card__title">
-        </div>
-        <div class="mdl-card__supporting-text mdl-color-text--grey-600">
-          I love hackathons and have been to a lot this past year. I have also
-          won prizes at a lot of them. Check out what I've built.
-        </div>
-        <div class="mdl-card__actions mdl-card--border">
-          <a href="projects.html#hackathon-header"
-          class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-          More Info</a>
-        </div>
-      </div>
-    </div>
-    <footer class="mdl-mini-footer mdl-color--blue-grey">
-      <div class="mdl-mini-footer--left-section">
-        <div class="mdl-logo">Everardo Rosales</div>
-        <ul class="mdl-mini-footer--link-list">
-          <li>
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link rel="stylesheet" href="css/main.css">
+      
+      <!--Import materialize.css-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
 
-          </li>
-          <li>
-            <a class="footer-link" href="#">About</a>
-          </li>
-          <li>
-            <a class="footer-link" href="projects.html">Projects</a>
-          </li>
-          <li>
-            <a class="footer-link" href="resume.pdf">Resume</a>
-          </li>
-          <li>
-            <a class="footer-link" href="http://github.com/everrosales">Github</a>
-          </li>
-          <li>
-            <a class="footer-link" href="http://linkedin.com/in/everrosales">Linkedin</a>
-          </li>
-        </ul>
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+    <body>
+      <!-- Handle bars js -->
+      <!--<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js"></script>-->
+      
+      <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+      <script type="text/javascript" src="js/main.js"></script>
+      <div class="navbar-fixed">
+        <nav class="blue-grey">
+          <!--<div class="container">-->
+          <div class="nav-wrapper white-text">
+            <a href="#!" class="brand-logo"><div class="page-title"> > Ever Rosales</div></a>
+            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+              <li><a href="index.html">About</a></li>
+              <li><a href="projects.html">Projects</a></li>
+              <li><a href="photos.html">Photos</a></li>
+              <li><a href="resume.pdf">Resume</a></li>
+              <li><a href="https://github.com/everrosales">Github</a></li>
+              <li><a href="https://www.linkedin.com/in/everardorosales">LinkedIn</a></li>
+              <li><a href="mobile.html">Contact</a></li>
+            </ul>
+            <ul class="side-nav" id="mobile-demo">
+              <li><a href="index.html">About</a></li>
+              <li><a href="projects.html">Projects</a></li>
+              <li><a href="photos.html">Photos</a></li>
+              <li><a href="resume.pdf">Resume</a></li>
+              <li><a href="https://github.com/everrosales">Github</a></li>
+              <li><a href="https://www.linkedin.com/in/everardorosales">LinkedIn</a></li>
+              <li><a href="mobile.html">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
       </div>
-    </footer>
-  </main>
-</div>
-  <script src="static/dml/material.min.js"></script>
-</body>
-</html>
+      
+      <div class="site-container">
+      
+       <!-- Main row intro -->
+      <div class="row">
+        
+        <div class="col l12 hide-on-med-and-down">
+          <div class="medium card horizontal" >
+            <div class="card-image">
+              <img class="horizontal-image" src="old-site/static/images/profile.jpg">
+              <span class="proj-card-title card-title">/me</span>
+            </div>
+            <div class="white card-stacked">
+              <div class="card-content">
+                <p>
+                  Currently employed as a software engineer at Google
+                  living in San Francisco, CA. I have a habbit of taking
+                  up a number of different hobbies to pass the time.
+                  Current interests include photography,
+                  woodworking, personal software projects.
+                </p>
+              </div>
+              <div class="card-action">
+                <a href="projects.html">Projects</a>
+                <a href="photos.html">Photos</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m12 hide-on-large-only">
+         <div class="large card" >
+          <div class="card-image">
+            <img class="my-card-img" src="old-site/static/images/profile.jpg">
+            <span class="card-title">/me</span>
+          </div>
+          <div class="card-content">
+              <p>
+              Currently employed as a software engineer at Google
+              living in San Francisco, CA. I have a habbit of taking
+              up a number of different hobbies to pass the time.
+              Current interests include photography,
+              woodworking, personal software projects.
+              </p>
+            </div>
+            <div class="card-action">
+              <a href="projects.html">Projects</a>
+              <a href="photos.html">Photos</a>
+            </div>
+          </div>
+        </div>
+      <!-- 'Recent' projects -->
+      <!-- Recent projects banner -->
+        <div class="col s12">
+          <div class="small card banner" id="recent-banner">
+            <div class="card-action transparent">
+              <span class="card-title proj-card-title blue-grey" href="#">Recent Projects</span>
+            </div>
+          </div>
+        </div>
+
+        <!--Tile 1-->
+        <div class="col l4 m12 s12">
+          <div class="medium card proj-card">
+            <div class="card-image">
+              <img class="project-picture-tile" src="old-site/static/images/lux.jpg">
+              <span class="proj-card-title card-title">LUX</span>
+            </div>
+            <div class="card-content">Autonomous tracking work light. (Spring 2017)</div>
+            <div class="card-action"><a href="#">More Info</a></div>
+          </div>
+        </div>
+        
+        <!--Tile 2-->
+        <div class="col l4 m6 s12">
+          <div class="medium card proj-card">
+            <div class="card-image">
+              <img class="project-picture-tile" src="old-site/static/images/forcefeeld.jpg">
+              <span class="proj-card-title card-title">Force Feel'd</span>
+            </div>
+            <div class="card-content">Force feedback glove for VR. (Spring 2015).</div>
+            <div class="card-action"><a href="#">More Info</a></div>
+          </div>
+        </div>
+        
+        <!--Tile 3-->
+        <div class="col l4 m6 s12">
+          <div class="medium card proj-card">
+            <div class="card-image">
+              <img class="project-picture-tile" src="old-site/static/images/pethub.png">
+              <span class="proj-card-title card-title">PetHub</span>
+            </div>
+            <div class="card-content">Website mock for UI class designed for pet owners and pet sitters. (Spring 2015) </div>
+            <div class="card-action"><a href="#">More Info</a></div>
+          </div>
+        </div>
+
+      <!-- Hackathons! -->
+      <div class="col l6 hide-on-med-and-down">
+        <div class="medium card banner" id="hackathon-banner">
+          <div class="card-action transparent">
+            <span class="card-title proj-card-title blue-grey" href="#">Hackathons</span>
+          </div>
+        </div>
+      </div>
+        
+      <div class="col l6 m12 s12">
+        <div class="medium card proj-card">
+          <div class="card-image">
+            <img class="project-picture-tile" src="old-site/static/images/hackathons.jpg">
+            <span class="proj-card-title card-title hide-on-large-only">Hackathons</span>
+          </div>
+          <div class="card-content">I love hackathons and have been to a lot in college. I also managed to win awards at a lot of them. Check out what I've built. </div>
+          <div class="card-action"><a href="#">More Ifo</a></div>
+        </div>
+      </div>
+  
+  
+      </div>
+      
+      <!-- Photos! -->
+      <div class="carousel carousel-slider center">
+      <div class="carousel-fixed-item center with-indicators">
+        <span class="proj-card-title">Instagrams</span>
+      </div>
+      <div class="carousel-item center" href="#one!">
+        <iframe class="center" height="450px" width="450px" src="http://instagram.com/p/BdmE6ajAJVh/embed" frameborder=0></iframe>
+      </div>
+      <div class="carousel-item center" href="#two!">
+        <iframe class="center" height="450px" width="450px" src="http://instagram.com/p/BcD9sTbg-oB/embed" frameborder=0></iframe>
+      </div>
+      <div class="carousel-item center" href="#three!">
+        <iframe class="center" height="450px" width="450px" src="http://instagram.com/p/Bb-Cm6LA7ck/embed" frameborder=0></iframe>
+      </div>
+      <div class="carousel-item center" href="#four!">
+        <iframe class="center" height="450px" width="450px" src="http://instagram.com/p/Bb7_NT2AjX_/embed" frameborder=0></iframe>
+      </div>
+      <div class="carousel-item center" href="#five!">
+        <iframe class="center" height="450px" width="450px" src="http://instagram.com/p/BPGGXmfASLM/embed" frameborder=0></iframe>
+      </div>
+      <div class="carousel-item center" href="#six!">
+        <iframe class="center" height="450px" width="450px" src="http://instagram.com/p/BOy4cnegkQe/embed" frameborder=0></iframe>
+      </div>
+      <div class="carousel-item center" href="#seven!">
+        <iframe class="center" height="450px" width="450px" src="http://instagram.com/p/BGGKGXHuedj/embed" frameborder=0></iframe>
+      </div>
+      </div>
+      </div>
+
+      <!-- Footer -->
+      <footer class="page-footer blue-grey">
+        <div class="container">
+          <div class="row">
+            <div class="col l12 s12">
+              <h5 class="white-text">Links</h5>
+              <ul class="footer-list-horizontal">
+                <li><a class="grey-text text-lighten-3" href="#!">About</a></li>
+                <li><a class="grey-text text-lighten-3" href="#!">Projects</a></li>
+                <li><a class="grey-text text-lighten-3" href="#!">Photos</a></li>
+                <li><a class="grey-text text-lighten-3" href="#!">Resume</a></li>
+                <li><a class="grey-text text-lighten-3" href="#!">Github</a></li>
+                <li><a class="grey-text text-lighten-3" href="#!">LinkedIn</a></li>
+                <li><a class="grey-text text-lighten-3" href="#!">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <div class="container">
+          © 2018 Ever Rosales
+          </div>
+        </div>
+      </footer>
+    </body>
+  </html>

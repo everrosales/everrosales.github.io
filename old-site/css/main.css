@@ -1,0 +1,90 @@
+a {
+  text-decoration: none;
+}
+
+div > .brief-media {
+  padding: 10px 20px;
+  background-color: #607D8B;
+}
+
+div > .brief {
+  margin: 10px auto;
+}
+
+.project-card-square.mdl-card {
+  width: 300px;
+  height: 350px;
+}
+
+.project-card.mdl-card {
+  width: 400px;
+  height: 350px;
+}
+
+.mdl-card-padding {
+  margin: auto;
+  padding: 10px;
+}
+
+.project-card-square > .mdl-card__title {
+  color: #ffffff;
+  background-color: #607B8D;
+}
+
+.mdl-grid.project-brief-row {
+  margin: auto;
+}
+
+.brief > div.mdl-card__supporting-text {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.mdl-card__title > h2 {
+  background-color: #607B8D;
+  padding: 10px;
+  color: #f1f1f1;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),
+    0 3px 1px -2px rgba(0,0,0,.2),
+    0 1px 5px 0 rgba(0,0,0,.12);
+}
+
+.mdl-card__title > h4 {
+  background-color: #607B8D;
+  font-size: 1.2em;
+  padding: 10px;
+  color: #f1f1f1;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),
+    0 3px 1px -2px rgba(0,0,0,.2),
+    0 1px 5px 0 rgba(0,0,0,.12);
+}
+
+.mdl-card__title-text-large {
+  font-weight: bold;
+}
+
+a.top-nav-link {
+  color: #ffffff ! important;
+  text-decoration: none;
+}
+
+.project-content.mdl-layout .mdl-layout__content {
+  position: relative;
+  -webkit-overflow-scrolling: touch;
+}
+
+.mdl-card__media {
+  background-color: #46B6AC;
+}
+
+.project-content__card {
+  max-width: 900px;
+  padding: 0px;
+  display: flex;
+  width: 100%;
+  flex-shrink: 0;
+}
+
+.icon-margin {
+  margin-right: 10px;
+}

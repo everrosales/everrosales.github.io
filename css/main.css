@@ -1,90 +1,112 @@
-a {
+.card.horizontal>.card-image>.horizontal-image{
+  max-height: 100%;
+  max-width: 200%;
+  width: auto;
+}
+
+.card>.card-image>.my-card-img {
+  bottom: 0%;
+  /*top:100%;*/
+}
+
+html>body {
+  background-image: url("../old-site/static/suburbs.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.card.small .card-image.card-banner,
+.card.medium .card-image.card-banner,
+.card.small .card-image.card-banner {
+  max-height: 100%;
+}
+
+.container .row {
+  margin-bottom: 0px;
+}
+#recent-banner {
+  background: url("../old-site/static/images/macbook-background.jpg") bottom 50% left 50% no-repeat #46B6AC;
+  background-size: cover;
+}
+
+#hackathon-banner {
+  background: url("../old-site/static/images/hackmit.jpg") bottom 50% left 50% no-repeat #46B6AC;
+  background-size: cover;
+}
+
+.card.banner .card-action {
+  border-top-width:0px;
+  /*font-size: 24px;*/
+}
+
+.footer-list-horizontal li {
+  display: inline;
+  padding-right: 20px;
+}
+
+.project-picture-tile {
+  min-height: 150px;
+}
+
+.card .card-image .proj-card-title.card-title,
+.proj-card-title.card-title,
+.carousel-fixed-item.center .proj-card-title {
+  background-color: #607d8b ! important;
+  margin: 14px;
+  padding: 10px;
   text-decoration: none;
+  color: #FFFFFF ! important;
 }
 
-div > .brief-media {
-  padding: 10px 20px;
-  background-color: #607D8B;
+.carousel-fixed-item.center .proj-card-title {
+  font-size: 24px;
+  font-weight: 300;
 }
 
-div > .brief {
-  margin: 10px auto;
+.card.small.proj-card .card-image,
+.card.medium.proj-card .card-image,
+.card.large.proj-card .card-image {
+  max-height: 60%;
+  height: 60%;
 }
 
-.project-card-square.mdl-card {
-  width: 300px;
-  height: 350px;
-}
-
-.project-card.mdl-card {
-  width: 400px;
-  height: 350px;
-}
-
-.mdl-card-padding {
-  margin: auto;
-  padding: 10px;
-}
-
-.project-card-square > .mdl-card__title {
-  color: #ffffff;
-  background-color: #607B8D;
-}
-
-.mdl-grid.project-brief-row {
-  margin: auto;
-}
-
-.brief > div.mdl-card__supporting-text {
-  padding-left: 40px;
-  padding-right: 40px;
-}
-
-.mdl-card__title > h2 {
-  background-color: #607B8D;
-  padding: 10px;
-  color: #f1f1f1;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),
-    0 3px 1px -2px rgba(0,0,0,.2),
-    0 1px 5px 0 rgba(0,0,0,.12);
-}
-
-.mdl-card__title > h4 {
-  background-color: #607B8D;
-  font-size: 1.2em;
-  padding: 10px;
-  color: #f1f1f1;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),
-    0 3px 1px -2px rgba(0,0,0,.2),
-    0 1px 5px 0 rgba(0,0,0,.12);
-}
-
-.mdl-card__title-text-large {
-  font-weight: bold;
-}
-
-a.top-nav-link {
-  color: #ffffff ! important;
-  text-decoration: none;
-}
-
-.project-content.mdl-layout .mdl-layout__content {
-  position: relative;
-  -webkit-overflow-scrolling: touch;
-}
-
-.mdl-card__media {
-  background-color: #46B6AC;
-}
-
-.project-content__card {
-  max-width: 900px;
-  padding: 0px;
-  display: flex;
+.card.small.proj-card .card-image img,
+.card.medium.proj-card .card-image img,
+.card.large.proj-card .card-image img {
+  display:block;
+  height: 100%;
   width: 100%;
-  flex-shrink: 0;
+  object-fit: cover;
+  
 }
 
-.icon-margin {
-  margin-right: 10px;
+.card.small.proj-card .card-content,
+.card.medium.proj-card .card-content,
+.card.large.proj-card .card-content {
+  max-height: 25%;
+}
+
+
+.card.proj-card .card-content {
+  height: 150px;
+}
+
+.site-container {
+  max-width: 1000px;
+  margin: auto;
+}
+
+
+.carousel.center {
+  height: 550px ! important;
+}
+
+.carousel-item.center {
+  width: 100%;
+}
+
+.carousel .carousel-item.center {
+  width: 100%;
+  height: 400px;
+  padding: 20px;
 }
