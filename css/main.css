@@ -9,12 +9,6 @@
   /*top:100%;*/
 }
 
-html>body {
-  background-image: url("../old-site/static/suburbs.jpg");
-  background-size: cover;
-  background-attachment: fixed;
-}
-
 .card.small .card-image.card-banner,
 .card.medium .card-image.card-banner,
 .card.small .card-image.card-banner {
@@ -24,19 +18,9 @@ html>body {
 .container .row {
   margin-bottom: 0px;
 }
-#recent-banner {
-  background: url("../old-site/static/images/macbook-background.jpg") bottom 50% left 50% no-repeat #46B6AC;
-  background-size: cover;
-}
-
-#hackathon-banner {
-  background: url("../old-site/static/images/hackmit.jpg") bottom 50% left 50% no-repeat #46B6AC;
-  background-size: cover;
-}
 
 .card.banner .card-action {
   border-top-width:0px;
-  /*font-size: 24px;*/
 }
 
 .footer-list-horizontal li {
@@ -51,11 +35,9 @@ html>body {
 .card .card-image .proj-card-title.card-title,
 .proj-card-title.card-title,
 .carousel-fixed-item.center .proj-card-title {
-  background-color: #607d8b ! important;
   margin: 14px;
   padding: 10px;
   text-decoration: none;
-  color: #FFFFFF ! important;
 }
 
 .carousel-fixed-item.center .proj-card-title {

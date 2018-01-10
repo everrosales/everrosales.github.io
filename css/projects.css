@@ -1,0 +1,33 @@
+html body {
+  background-image: url("../old-site/static/images/macbook-background.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#hackathon-banner .card-image {
+  background: url("../old-site/static/images/makemit.jpg") bottom 50% left 50% no-repeat #0097a7;
+  background-size: cover;
+  height: 320px;
+}
+
+.card .card-image .proj-card-title.card-title,
+.proj-card-title.card-title,
+.carousel-fixed-item.center .proj-card-title {
+  background-color: #0097a7 ! important;
+  color: #FFFFFF ! important;
+}
+
+.site-color {
+  color: #0097a7 ! important;
+  background-color: #0097a7 ! important;
+}
+
+.medium.card.no-action .card-image {
+  max-height: 80%;
+}
+
+#scavengr-card .card-image img {
+  background: url("../old-site/static/images/scavengrScreen.png") bottom 50% left 50% no-repeat #bdbdbd;
+  background-size: contain;
+  height: 230px;
+}

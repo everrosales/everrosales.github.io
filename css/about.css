@@ -1,0 +1,27 @@
+html body {
+  background-image: url("../old-site/static/suburbs.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#recent-banner {
+  background: url("../old-site/static/images/macbook-background.jpg") bottom 50% left 50% no-repeat #607d8b;
+  background-size: cover;
+}
+
+#hackathon-banner {
+  background: url("../old-site/static/images/hackmit.jpg") bottom 50% left 50% no-repeat #607d8b;
+  background-size: cover;
+}
+
+.card .card-image .proj-card-title.card-title,
+.proj-card-title.card-title,
+.carousel-fixed-item.center .proj-card-title {
+  background-color: #607d8b ! important;
+  color: #FFFFFF ! important;
+}
+
+.site-color {
+  color: #607d8b ! important;
+  background-color: #607d8b ! important;
+}
