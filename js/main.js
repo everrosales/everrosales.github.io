@@ -18,16 +18,12 @@ function interval(func, wait, times){
 };
 
 $( document ).ready(function(){
-  // Initialize the side nav
-  $(".button-collapse").sideNav();
-  $(".carousel").carousel({indicators: true, dist:-400});
-
+  // // Initialize the side nav
+  // $(".button-collapse").sideNav();
+  // $(".carousel").carousel({indicators: true,numVisible: 3});
+  //
   // interval(function() {
   //   $('.carousel').carousel('next');
   // }, 5000)
-  
+
 })
-
-
-
-
